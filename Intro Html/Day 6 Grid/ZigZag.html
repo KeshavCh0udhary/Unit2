@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area 2</title>
+    <style>
+        #Container {
+            width: 900px;
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 130px);
+            row-gap: 40px;
+            column-gap: 30px;
+            grid-template-areas:
+                "a b b c "
+                "d d e f "
+                "g h i i"
+            ;
+            color: white;
+            font-weight: bolder;
+            font-size: 35px;
+        }
+
+        #Container>div {
+            border-radius: 5px;
+        }
+
+
+        #Container>div:nth-child(1) {
+            background-color: rgb(33, 120, 103);
+            grid-area: a;
+        }
+
+        #Container>div:nth-child(2) {
+            background-color: rgb(33, 120, 103);
+            grid-area: b;
+        }
+
+        #Container>div:nth-child(3) {
+            background-color: rgb(33, 120, 103);
+            grid-area: c;
+        }
+
+        #Container>div:nth-child(4) {
+            background-color: rgb(33, 120, 103);
+            grid-area: d;
+        }
+
+        #Container>div:nth-child(5) {
+            background-color: rgb(33, 120, 103);
+            grid-area: e;
+        }
+
+        #Container>div:nth-child(6) {
+            background-color: rgb(33, 120, 103);
+            grid-area: f;
+        }
+
+        #Container>div:nth-child(7) {
+            background-color: rgb(33, 120, 103);
+            grid-area: g;
+        }
+
+        #Container>div:nth-child(8) {
+            background-color: rgb(33, 120, 103);
+            grid-area: h;
+        }
+
+        #Container>div:nth-child(9) {
+            background-color: rgb(33, 120, 103);
+            grid-area: i;
+        }
+
+
+
+        /* #Container>div:nth-child(5) {
+            background-color: rgb(33,120,103);
+            grid-area: e;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="Container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+    </div>
+</body>
+
+</html>

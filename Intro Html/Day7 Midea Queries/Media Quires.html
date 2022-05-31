@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ Layout</title>
+    <style>
+        #Nav {
+            background-color: yellow;
+            width: 80%;
+            height: 80px;
+            font-size: 30px;
+            display: grid;
+            align-items: center;
+            padding-left: 2%;
+            margin: auto;
+        }
+
+        #Block {
+            margin: auto;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 300px;
+            gap: 30px;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+
+        #Block>div {
+            padding: 4%;
+        }
+
+        #Block>div:nth-child(1) {
+            background-color: red;
+        }
+
+        #Block>div:nth-child(2) {
+            background-color: green;
+        }
+
+        #Block>div:nth-child(3) {
+            background-color: blue;
+        }
+
+        #Block>div:nth-child(4) {
+            background-color: grey;
+        }
+
+        @media all and (min-width: 480px) and (max-width: 720.99px) {
+            #Block {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 300px);
+            }
+        }
+
+        @media all and (min-width: 0px) and (max-width: 479.99px) {
+            #Block {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Nav">Navigation</div>
+    <div id="Block">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+        <div>Box4</div>
+    </div>
+</body>
+
+</html>

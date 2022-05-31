@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ Layout</title>
+    <style>
+        #Nav {
+            background-color: yellow;
+            width: 80%;
+            height: 80px;
+            font-size: 30px;
+            display: grid;
+            align-items: center;
+            padding-left: 2%;
+            margin: auto;
+        }
+
+        #Block {
+            margin: auto;
+            border: 1px solid black;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 600px;
+            gap: 30px;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+
+        #Block>div {
+            padding: 4%;
+        }
+
+        #Block>div:nth-child(1) {
+            background-color: red;
+        }
+
+        #Block>div:nth-child(2) {
+            display: grid;
+            gap: 20px;
+            width: 85%;
+        }
+
+        #Block>div:nth-child(2)>div {
+            background-color: green;
+        }
+
+        @media all and (min-width: 480px) and (max-width: 721.99px) {
+            #Block {
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(2, 100%);
+                font-size: 20px;
+            }
+
+            #Block>div:nth-child(2) {
+                grid-template-columns: repeat(3, 34%);
+                grid-template-rows: 100%;
+            }
+        }
+
+        @media all and (min-width: 0px) and (max-width: 479.99px) {
+            #Block {
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(3, 100%);
+                font-size: 15px;
+            }
+
+            #Block>div:nth-child(2) {
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(3, 50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Nav">Navigation</div>
+    <div id="Block">
+        <div>Left Box</div>
+        <div>
+            <div>Right Box 1</div>
+            <div>Right Box 2</div>
+            <div>Right Box 3</div>
+        </div>
+    </div>
+</body>
+
+</html>

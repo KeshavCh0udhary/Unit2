@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Navbar</title>
+    <style>
+        body>div {
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        }
+
+        #Navbar {
+            display: flex;
+            margin: auto;
+            width: 1500px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #Navbar>div+div {
+            width: 40%;
+            justify-content: space-evenly;
+            margin-right: 0%;
+            background-color: transparent;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #Navbar>div {
+            display: flex;
+            width: 200px;
+            padding-left: 50px;
+            background-color: rgb(152, 95, 231);
+            margin-left: 0%;
+            font-size: 30px;
+            font-weight: bolder;
+
+        }
+
+        #Navbar>div:nth-child(1) {
+            color: white;
+        }
+
+        #Body {
+            display: flex;
+            border: 2px solid transparent;
+            width: 1700px;
+            margin: auto;
+            margin-top: 40px;
+            padding-left: 10%;
+        }
+
+        #Body>div {
+            width: 45%;
+        }
+
+        #Body>div:first-child {
+            padding-top: 50px;
+            padding-right: 40px;
+            font-size: larger;
+        }
+
+        #Body>div:first-child h4 {
+            color: rgb(0, 153, 255);
+            font-size: medium;
+            font-weight: bolder;
+        }
+
+        #Body>div:first-child h1 {
+            font-size: 45px;
+        }
+
+        #Body>div:first-child>div {
+            display: flex;
+            margin-bottom: 60px;
+        }
+
+        #Body>div:first-child>div img {
+            width: 30%;
+        }
+
+        #Body>div:first-child>div p {
+            margin-left: 40px;
+            width: 47%;
+            color: black;
+            font-weight: bold;
+        }
+
+        #Body>div:first-child p {
+            font-size: 25px;
+            line-height: 40px;
+            color: gray;
+        }
+
+        #Body>div:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #Body>div:last-child>div {
+            width: 40%;
+padding-bottom: 40px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #Body>div:last-child>div img{
+            width: 30%;
+            border-radius: 50%;
+            padding:20px;
+        }
+        #Body>div:last-child>div p{
+            font-size: 25px; 
+            line-height: 35px;  
+            padding-left: 20px;
+            color: grey;
+           
+        }
+        #Body>div:last-child>div h2{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="Navbar">
+            <div>
+                <p>Study Lab</p>
+            </div>
+            <div>
+                <p>Home</p>
+                <p>About</p>
+                <p>Course</p>
+                <p>Instructor</p>
+                <p>Blog</p>
+                <p>Contact</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="Body">
+        <div>
+            <h4>WELCOME TO STUDYLAB</h4>
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. it is a
+                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>Far away, behind the word mountains, far from the countris Vokalia and Consonantia, there live the blind
+                texts. Seperated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.</p>
+            <div><img
+                    src="https://image.shutterstock.com/image-photo/education-learning-concept-opening-book-260nw-1491910001.jpg"
+                    alt="lab">
+                <p>Learn anything from Studylab, Watch Video</p>
+            </div>
+
+
+        </div>
+        <div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8i2JTMuQn-etFh0syWkHdfwnDHzDx_ZVRT6_gwHzuT2-FauhoeJyoK3wocDe0b0vt6xQ&usqp=CAU" alt="Ceritificate">
+                <h2>Top Quality Content</h2>
+                <p>A small reier named Duden folows by their place and supplies</p>
+            </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8i2JTMuQn-etFh0syWkHdfwnDHzDx_ZVRT6_gwHzuT2-FauhoeJyoK3wocDe0b0vt6xQ&usqp=CAU" alt="Ceritificate">
+                <h2>Top Quality Content</h2>
+                <p>A small reier named Duden folows by their place and supplies</p></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8i2JTMuQn-etFh0syWkHdfwnDHzDx_ZVRT6_gwHzuT2-FauhoeJyoK3wocDe0b0vt6xQ&usqp=CAU" alt="Ceritificate">
+                <h2>Top Quality Content</h2>
+                <p>A small reier named Duden folows by their place and supplies</p></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8i2JTMuQn-etFh0syWkHdfwnDHzDx_ZVRT6_gwHzuT2-FauhoeJyoK3wocDe0b0vt6xQ&usqp=CAU" alt="Ceritificate">
+                <h2>Top Quality Content</h2>
+                <p>A small reier named Duden folows by their place and supplies</p></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
